@@ -3,7 +3,7 @@
 
 |Build| |PyPI version|
 
-115 Wangpan (115网盘) is an unofficial Python API for 115.com, mainly pertinent to its "lixian" (offline) features. Currently, only limited features have been implemented. Supported Python verisons are 2.6, 2.7 and 3.3.
+115 Wangpan  is an unofficial Python API for 115.com, mainly pertinent to its "lixian" (offline) features. Currently, only limited features have been implemented. Supported Python verisons are 2.6, 2.7 and 3.3.
 
 * Documentation: http://115wangpan.readthedocs.org
 * GitHub: https://github.com/shichao-an/115wangpan
@@ -52,21 +52,21 @@ Usage
     >>> tasks = api.get_tasks()
     >>> task = tasks[0]
     >>> print task.name
-    咲-Saki- 阿知賀編 episode of side-A
+    episode of side-A
     >>> print task.status_human
     TRANSFERRED
     >>> print task.size_human
     1.6 GiB
     >>> files = task.list()
     >>> files
-    [<File: 第8局 修行.mkv>]
+    [<File: ep8 xxx.mkv>]
     >>> f = files[0]
     >>> f.get_download_url()
     u'http://cdnuni.115.com/some-very-long-url.mkv'
     >>> f.directory
-    <Directory: 咲-Saki- 阿知賀編 episode of side-A>
+    <Directory: episode of side-A>
     >>> f.directory.parent
-    <Directory: 离线下载>
+    <Directory: offline download>
 
 
 Helpers
